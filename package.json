@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "adb-r": "adb reverse tcp:8081 tcp:8081",
+    "adb-s": "adb shell input keyevent 82",
     "build-root-schema": "python2.7 node_modules/@walkin-frontend/react-native-modular-ui-framework/scripts/build.py"
   },
   "dependencies": {

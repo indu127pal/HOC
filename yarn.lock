@@ -5085,9 +5085,9 @@ react-native-root-siblings@^2.2.0:
   dependencies:
     static-container "^1.0.0"
 
-"react-native-snackbar-dialog@git+https://github.com/getwalkin/react-native-snackbar-dialog.git":
+"react-native-snackbar-dialog@https://github.com/getwalkin/react-native-snackbar-dialog.git":
   version "1.4.1"
-  resolved "git+https://github.com/getwalkin/react-native-snackbar-dialog.git#4e829e4d117de91997d8437c8e79895368a985e5"
+  resolved "https://github.com/getwalkin/react-native-snackbar-dialog.git#4e829e4d117de91997d8437c8e79895368a985e5"
   dependencies:
     babel-cli "^6.18.0"
     babel-plugin-flow-react-proptypes "^23.0.0"

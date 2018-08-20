@@ -1,1 +1,20 @@
-{}
+{
+    "color_white": "#FFFFFF",
+    "color_black": "#202020",
+    "faint_white": "#ffffff22",
+    "transparent_color": "#ffffff00",
+    "color_mid_grey": "#888888",
+    "color_green": "#008000",
+
+    "bg_main": "#f2e8d5",
+    "bg_raised": "#ccc0a1",
+    "bg_selected": "#ffffff",
+    "bg_flat": "#E3DED1",
+    "bg_mid": "#D5CEBB",
+    "bg_brand1": "#b62125",
+    "bg_brand2": "#5c4b43",
+    "overlay_red_color": "#e1000066",
+    "overlay_white_color": "#FFFFFF99",
+    "overlay_color": "#00000066",
+    "bg_splash": "#B9A88A"
+}
