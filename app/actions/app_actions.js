@@ -1,21 +1,14 @@
-import {
-    KeyValueStorageUtils,
-    NavigationActions,
-    saveCustomerData,
-    t,
-    MetaUtils,
-    NetworkServiceSingleton,
-    WalkinSecurityUtils,
-    LocationActions,
-    CommonActions,
-    WalkinUtils,
-} from '@walkin-frontend/react-native-modular-ui-framework';
-import { networkConfig } from '../config';
+export function checkLogin(component) {    
+    return (dispatch) => {
+        // let _childrenStates = component.state.childrenStates;
+        // // // let inlets = component.props.meta.onFormSubmit.inlets;
+        // // // let body = MetaUtils.mapOutletsWithData(compIdDataMapping, inlets);
+        // // console.log(component.state);
+        // console.log("check the status");
+        // // console.log(url);
+        let abc = []
+        console.log(...abc);
 
-
-export function checkLogin(component, url) {
-    return (dispatch, getState) => {
-        let state = getState();
-        console.log(state);
+        return dispatch({ 'type': 'DUMMY_TYPE' });
     }
 }

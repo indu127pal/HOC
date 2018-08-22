@@ -11,7 +11,7 @@ const schema = {
       "meta": {
         "onFormSubmit": {
           "moduleName": "checkLogin",
-          "args": ["authenticate/signin"]
+          "args": ["212"]
         }
       },
       "children":[
@@ -19,7 +19,7 @@ const schema = {
           "id": "loginContainer",
           "component": "GenericComponent",
           "styleClass": {
-            "container": "flex0"
+            "container": ["flex0", "marginHorizontalMedium"]
           },
           "children": [
             {
@@ -38,6 +38,13 @@ const schema = {
               "name": "Email",
               "styleClass": {
                 "textInput": "NameInputStyle"
+              },
+              "formProps": {
+                "validators": [{
+                  "moduleName": "validateEmail",
+                  "args": ["text"],
+                  "errorMessage": "@string/valid_email"
+                }]
               }
             },
             {
@@ -56,6 +63,13 @@ const schema = {
               "name": "Password",
               "styleClass": {
                 "textInput": "NameInputStyle"
+              },
+              "formProps": {
+                "validators": [{
+                  "moduleName": "validateMinMaxCharacters",
+                  "args": [4, 25],
+                  "errorMessage": "@string/minimum_character_allowed"
+                  }]
               }
             },
             {
@@ -88,13 +102,12 @@ const schema = {
     "mainScreenContainer": {
       "backgroundColor": "@color/bg_main",
       "flex": 1,
-      "justifyContent": "center",
-      "alignItems": "center",
-      "flexDirection": "row"
+      "flexDirection": "column"
     },
     "tinyTextStyle": {
       "fontSize": "@dimen/tiny_text",
-      "color": "@color/color_black"
+      "color": "@color/color_black",
+      "marginHorizontal": "@dimen/dimen_m"
     },
     "emailFieldStyle": {
       "flex": 2,
@@ -149,6 +162,71 @@ const schema = {
     },
     "flex1": {
         "flex": 1
+    },
+    "btn": {
+      "justifyContent": "center",
+      "marginVertical": "@dimen/dimen_s",
+      "paddingVertical": "@dimen/dimen_s",
+      "width": "@dimen/button_width",
+      "borderWidth": "@dimen/dimen_xxs",
+      "borderRadius": "@dimen/button_border_radius",
+      "elevation": "@dimen/button_elevation"
+    },
+    "btnAlert":{
+      "justifyContent": "center",
+      "marginVertical": "@dimen/dimen_s",
+      "paddingVertical": "@dimen/dimen_s",
+      "width": "@dimen/alert_button_width",
+      "borderWidth": "@dimen/dimen_xxs",
+      "borderRadius": "@dimen/button_border_radius",
+      "elevation": "@dimen/button_elevation"
+    },
+    "btnPrimary": {
+      "backgroundColor": "@color/bg_brand1",
+      "borderColor": "@color/bg_brand1"
+    },
+    "btnSecondary": {
+      "backgroundColor": "@color/color_white",
+      "borderColor": "@color/bg_brand1"
+    },
+    "alignSelfCenter": {
+      "alignSelf": "center"
+    },
+    "alignSelfEnd": {
+      "alignSelf": "flex-end"
+    },
+    "alignSelfStart": {
+      "alignSelf": "flex-start"
+    },
+    "justifyCenter": {
+      "justifyContent": "center"
+    },
+    "justifyFlexEnd": {
+      "justifyContent": "flex-end"
+    },
+    "justifyFlexStart": {
+      "justifyContent": "flex-start"
+    },
+    "alignJustifyCenter": {
+      "alignItems": "center",
+      "justifyContent": "center"
+    },
+    "btnText": {
+      "fontSize": "@dimen/tiny_text",
+      "fontWeight": "bold",
+      "textAlign": "center"
+    },
+    "btnTextWhite": {
+      "color": "@color/color_white"
+    },
+    "marginHorizontalLarge": {
+      "marginHorizontal": "@dimen/dimen_l"
+    },
+    "marginHorizontalMedium": {
+      "marginHorizontal": "@dimen/dimen_m"
+    },
+    "marginHorizontalSmall": {
+      "marginHorizontal": "@dimen/dimen_s"
     }
   },
   "schemaConfig": {
