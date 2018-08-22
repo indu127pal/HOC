@@ -3,11 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "adb-r": "adb reverse tcp:8081 tcp:8081",
+    "adb-s": "adb shell input keyevent 82",
     "build-root-schema": "python2.7 node_modules/@walkin-frontend/react-native-modular-ui-framework/scripts/build.py"
   },
   "dependencies": {
     "@walkin-frontend/react-native-modular-ui-framework": "^1.0.14-6",
+    "apollo-boost": "^0.1.14",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
     "react": "16.4.1",
+    "react-apollo": "^2.1.11",
     "react-native": "0.56.0"
   },
   "devDependencies": {

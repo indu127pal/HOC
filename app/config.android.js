@@ -10,8 +10,8 @@ export const dbConfig = {
 }
 
 export const networkConfig = {
-    BASE_URL: 'http://www.google.com',
-    APPEND_BASE_PATH:'/ccd-api/v1/public',  
+    BASE_URL: 'http://178.128.208.15:8000',
+    APPEND_BASE_PATH:'/auth/v1/',  
     DEFAULT_TIMEOUT: 20000,
     securityEnabled: true,
     defaultHeaders: {
